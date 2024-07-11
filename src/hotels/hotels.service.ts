@@ -8,8 +8,6 @@ import * as cheerio from 'cheerio';
 
 @Injectable()
 export class HotelsService {
-  private readonly logger = new Logger(HotelsService.name);
-
   constructor(
     @InjectRepository(Hotel)
     private hotelsRepository: Repository<Hotel>,
@@ -17,12 +15,9 @@ export class HotelsService {
 
   async scrapeAndSaveHotel(name: string): Promise<Hotel> {
     const searchUrl = `http://www.booking.com/searchresults.es.html?ss=${encodeURIComponent(name)}`;
-    this.logger.log(`Search URL: ${searchUrl}`);
 
     const response = await axios.get(searchUrl);
     const $ = cheerio.load(response.data);
-
-    console.log($.html());
 
     const firstResultLink = $(
       'div.e01df12ddf a0914461b0 d46a3604b5 ba1c6fdc7f f550b7da28 b9a2fd8068 cb4a416743',
