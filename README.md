@@ -1,21 +1,21 @@
 # Athlos Travel Tech Challenge
 
-## Description
+## Description ℹ️
 
 This project is an API developed using [NestJS](https://nestjs.com/) to manage hotel information. It utilizes web scraping to fetch details from Booking.com and stores them in a database using TypeORM.
 
-## Features
+## Features ✨
 
 - **Data Scraping**: Fetch hotel data from Booking.com.
 - **CRUD Operations**: Create, read, update, and delete hotel information.
 - **API Documentation**: Integrated with Swagger for API documentation.
 
-## Prerequisites
+## Prerequisites 📋
 
 - [Node.js](https://nodejs.org/) (v14 or higher)
 - [PostgreSQL](https://www.postgresql.org/)
 
-## Installation
+## Installation 🚀
 
 1. **Clone the repository:**
 
@@ -44,7 +44,7 @@ Create a .env file in the root directory and add the following:
 
 Replace your_db_username, your_db_password, and your_db_name with your PostgreSQL credentials.
 
-## Running the Application
+## Running the Application 🏃‍♂️
 
 To start the application, run:
 
@@ -54,7 +54,7 @@ To start the application, run:
 
 The server will start at http://localhost:3000.
 
-## API Endpoints
+## API Endpoints 🛠️
 
 | Method | Endpoint             | Description                                      |
 |--------|----------------------|--------------------------------------------------|
@@ -64,7 +64,7 @@ The server will start at http://localhost:3000.
 | PUT    | /hotels/:id          | Updates a hotel by ID.                           |
 | DELETE | /hotels/:id          | Deletes a hotel by ID.                           |
 
-## Swagger API Documentation
+## Swagger API Documentation 📖
 
 API documentation is available using Swagger at:
 
